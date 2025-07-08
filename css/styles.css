@@ -1,0 +1,295 @@
+/* General */
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+.company-info-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 175px;
+}
+
+.company-info-background {
+  background-color: #424141ca;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+
+.company-info-titlebox {
+  position: absolute;
+  padding-left: 10%;
+  top: 40px;
+  width: 500px;
+}
+
+.company-info-titlebox h2,
+.company-info-titlebox p {
+  color: #f8f5f5;
+}
+
+.company-info-titlebox h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+/* Serviços */
+.car-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 10%;
+}
+
+.car-card {
+  width: 30%;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+}
+
+.car-info {
+  padding: 20px;
+}
+
+.car-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #5ca4cd;
+}
+
+.car-details,
+.car-specs {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.car-details li,
+.car-specs li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.car-specs li i {
+  margin-right: 6px;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+}
+
+
+.about-section {
+  background-color: #000;
+  padding: 60px 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.about-title h2 {
+  font-size: 30px;
+  color: #3876bc;
+  margin-bottom: 10px;
+}
+
+.about-title p {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  flex: 1 1 30%;
+  background-color: #2c2c34;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+}
+
+.about-card i {
+  font-size: 42px;
+  color: #3876bc;
+  margin-bottom: 15px;
+}
+
+.about-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.about-card p {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/*footer*/
+.new-footer {
+  background-color: #1c1c24;
+  color: #fff;
+  padding: 80px 13% 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+
+.footer-social-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #3876bc;
+  font-size: 35px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.contact-box h3 {
+  margin-bottom: 15px;
+}
+
+.address-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.address p,
+.contacts p {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.footer-col i {
+  margin-right: 8px;
+  color: #355993;
+}
+
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  background-color: #2c2c34;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.footer-form input[type="submit"] {
+  background-color: #2c5893;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.footer-form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
