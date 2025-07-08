@@ -63,6 +63,7 @@ html {
 
 /* Serviços */
 .car-cards-container {
+  background-color: #1c1c24;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
